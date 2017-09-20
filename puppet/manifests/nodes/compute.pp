@@ -1,0 +1,1 @@
+node compute inherits devStack {}
