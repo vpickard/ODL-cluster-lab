@@ -1,7 +1,8 @@
 node basenode {
 
   exec { "yum_update":
-    command => "/usr/bin/yum -y update"
+    command => "/bin/yum -y update",
+    timeout => '600'
   }
   
 
