@@ -15,7 +15,10 @@ DS_CONTROL2_MGMT_IP     = "10.8.125.251"
 DS_CONTROL3_MGMT_IP     = "10.8.125.252"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "vpickard/centos-7.3.virtualbox.box"
+  #config.vm.box = "vpickard/centos-7.3.virtualbox.box"
+  #config.vm.box_version = "1.0"
+  #config.vm.box = "centos-7.4.libvirt.box"
+  config.vm.box = "vpickard/centos-7.4.libvirt.box"
   config.vm.box_version = "1.0"
 
   #config.vm.provision.puppet.manifests_path = "/root/vic/SR-IOV-lab/puppet/manifests"
