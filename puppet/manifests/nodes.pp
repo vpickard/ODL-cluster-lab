@@ -29,6 +29,9 @@ node basenode {
                      "selinux-policy-devel",
                      "wget",
                      "redhat-lsb-core",
+                     "java-1.8.0-openjdk",
+                     "tcpdump",
+                     "traceroute",
                    ]
 
   package { $base_packages:
